@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -14,6 +20,9 @@ body {
 	background-position-x: center;
 	background-size: cover;
 	align-items: center;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 
 	/* font-family: Bricolage Grotesque; */
 }
@@ -35,6 +44,7 @@ navbar {
 	-webkit-backdrop-filter: blur(8px);
 	backdrop-filter: blur(8px);
 	align-items: center;
+	height: 5rem;
 }
 .logo {
 	font-weight: 700;
@@ -82,10 +92,12 @@ main {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding: 5rem 5rem 0rem 5rem;
+	padding: 2rem 2rem 0rem 5rem;
 	text-align: center;
 	justify-content: center;
 	min-height: 90vh;
+  height: 100%;
+  flex-grow: 1;
 	/* width: fit-content; */
 }
 .editor {
@@ -147,6 +159,7 @@ footer {
 	border-width: 1px 0 0 0;
 	border-style: solid;
 	border-radius: 10px;
+	width: 100%;
 }
 footer .logo {
 	margin-right: 1rem;
